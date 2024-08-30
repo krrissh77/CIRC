@@ -1,0 +1,126 @@
+.chat-box{
+  display: flex;
+  flex-direction: column;
+  position: absolute; 
+  bottom: 60px;
+}
+
+.chat-history{
+  height: 670px;
+  overflow-y: scroll;
+  margin-left: 50px;
+  margin-right: -200px;
+  padding-right: 50px;
+}
+
+.chat-history::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.chat-history::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Background color of the track */
+}
+
+.chat-history::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2); /* Scrollbar thumb color with reduced opacity */
+  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+
+.chat-history::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3); /* Darker thumb color on hover */
+}
+
+.message-container{
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.user-message-main{
+  align-self: flex-end;
+  display: flex;
+  gap: 10px;
+}
+
+.user-message-main img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.06);
+}
+
+.user-message{
+  min-width: 200px;
+  max-width: 550px;
+  border: 2px solid #23c8ff;
+  background-color: #f5fdff;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px 0px 10px 10px;
+  font-size: 18px;
+  text-align: right;
+  line-height: 30px;
+  word-wrap: break-word;
+}
+
+.bot-message-main{
+  display: flex;
+  gap: 10px;
+}
+
+.bot-message-main img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.06);
+}
+
+.bot-message{
+  min-width: 200px;
+  max-width: 550px;
+  border: 2px solid #23c8ff;
+  background-color: #e3f8ff;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 0px 10px 10px 10px;
+  font-size: 18px;
+  text-align: left;
+  line-height: 30px;
+}
+
+.InputDiv{
+  border: 2px solid #acacac;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.InputBox{
+  width: 800px;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background: none;
+  padding-left: 18px;
+  align-content: center;
+  overflow-y: hidden;
+  resize: none;
+}
+
+.SendBttn img{
+  height: 30px;
+  opacity: 0.5;
+}
+
+.SendBttn{
+  background:none;
+  border: none;
+}
